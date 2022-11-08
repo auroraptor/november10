@@ -18,5 +18,8 @@
   "homepage": "https://github.com/auroraptor/november10#readme",
   "devDependencies": {
     "webpack": "^5.74.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
   }
 }
