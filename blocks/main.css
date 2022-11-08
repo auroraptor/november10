@@ -1,0 +1,24 @@
+.main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  row-gap: 17px;
+  column-gap: 17px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main__container {
+  border: 3px solid LawnGreen;
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 425px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
