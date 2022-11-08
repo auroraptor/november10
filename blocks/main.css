@@ -9,11 +9,22 @@
 }
 
 .main__container {
-  border: 3px solid LawnGreen;
   width: 100%;
   height: 200px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.main__container:first-child {
+  background-color: Cornsilk;
+}
+
+.main__container:nth-child(2) {
+  background-color: BlanchedAlmond;
+}
+
+.main__container:last-child {
+  background-color: Bisque;
 }
 
 @media (max-width: 425px) {
