@@ -19,15 +19,33 @@ $(function(){
     return this.pushStack( stack );
 };
 
-$('button').on('click', function(){
+$('#button_type_success').on('click', function(){
   $('.left').swap('.right');
 });
   });
 
+const closeModal = (evt) => {
+  if (evt.key === 'Escape') {
+    closePopup();
+  }
+};
+
+const overlayClick = (evt) => {
+  if (evt.target.classList.contains('popup')) {
+    closePopup();
+  }
+}
+const closePopup = () => {
+  popup.classList.remove('popup_opened');
+  document.removeEventListener('keydown', closeModal);
+  document.removeEventListener('mousedown', overlayClick);
+}
+
 buttonWarning.addEventListener('click', () => {
     header.classList.toggle('header_hide');
 });
-
 closeIcon.addEventListener('click', () => {
-  popup.classList.remove('popup_opened');
+  closePopup();
 });
+document.addEventListener('keydown', closeModal);
+document.addEventListener('mousedown', overlayClick);
