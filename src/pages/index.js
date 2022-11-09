@@ -1,10 +1,8 @@
 const page = document.querySelector('.page');
 const header = page.querySelector('.header');
 const buttonWarning = page.querySelector('#button_type_warning');
-
-buttonWarning.addEventListener('click', () => {
-  header.classList.toggle('header_hide');
-});
+const popup = page.querySelector('.popup');
+const closeIcon = popup.querySelector('.popup__close-icon');
 
 $(function(){
   jQuery.fn.swap = function(b) {
@@ -26,3 +24,6 @@ $('button').on('click', function(){
 });
   });
 
+closeIcon.addEventListener('click', () => {
+  popup.classList.remove('popup_opened');
+});
