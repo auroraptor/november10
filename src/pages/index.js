@@ -24,6 +24,10 @@ $('button').on('click', function(){
 });
   });
 
+buttonWarning.addEventListener('click', () => {
+    header.classList.toggle('header_hide');
+});
+
 closeIcon.addEventListener('click', () => {
   popup.classList.remove('popup_opened');
 });
