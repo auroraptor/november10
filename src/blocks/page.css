@@ -1,0 +1,13 @@
+.page {
+  background-color: GhostWhite;
+  color: black;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  margin: 0 auto;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
