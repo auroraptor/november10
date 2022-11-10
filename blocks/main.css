@@ -20,11 +20,11 @@
 }
 
 .main__container:nth-child(2) {
-  background-color: BlanchedAlmond;
+  background-color: #23b499;
 }
 
 .main__container:last-child {
-  background-color: Bisque;
+  background-color: skyblue;
 }
 
 @media (max-width: 425px) {

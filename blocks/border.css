@@ -4,4 +4,5 @@
 
 .border_dashed {
   border: 1px dashed black;
+  background-color: #23b499;
 }
