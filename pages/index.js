@@ -2,7 +2,7 @@ const page = document.querySelector(".page");
 const header = page.querySelector(".header");
 const buttonWarning = page.querySelector("#button_type_warning");
 const popup = page.querySelector(".popup");
-const closeIcon = popup.querySelector(".popup__close-icon");
+const closeIcon = popup.querySelector(".icon");
 
 $(function () {
   jQuery.fn.swap = function (b) {
