@@ -8,18 +8,14 @@
   <title>Форма ввода</title>
 </head>
 <body class="page">
+  <div class="form__container">
   <form action="" method="get" class="form">
-    <p>
-      <label for="first">Введите текст здесь:</label>
-      <input type="text" name="first" id="first" required>
-    </p>
-    <p>
-      <label for="second">Введите тест и здесь:</label>
-      <input type="text" name="second" id="second" required>
-    </p>
-    <button type="submit" class="button">Отправить</button>
+      <input class="input-group__input" type="text" name="first" id="first" required placeholder="Введите текст здесь">
+      <input class="input-group__input" type="text" name="second" id="second" required placeholder="Введите текст и здесь">
+    <button type="submit" class="button button_size_xl button_type_submit">Отправить</button>
   </form>
-
+  </div>
+<div class="json__container"></div>
   <template id="select-template">
     <select class="select">
     </select>

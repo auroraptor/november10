@@ -1,0 +1,142 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+
+.form__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 128, .8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/* уровни переопределения и декларативное программирование строки 11 и 17 это же они? */
+.form_opened {
+  display: flex;
+}
+
+.input-group {
+  position: relative;
+  background-color: rgba(248, 248, 255, 1);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, .5);
+  border-radius: 15px;
+  width: 430px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: .7;
+  transition: opacity .42s linear;
+}
+
+.button_size_m {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+.button_size_xl {
+  height: 50px;
+}
+
+.button_theme_close {
+  position: absolute;
+  top: -42px;
+  left: 438px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+/* а вот такое название допустимо? или мб только что-то вроде button_type_submit */
+.button_type_submit {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+}
+/* как сделать чтобы расстояние между элдементами совпадали с макетом и чтобы не считать микропиксели отступов? -- считать сверху */
+.form {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input-group__label {
+  font-size: 24px;
+}
+
+.input-group__input {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  border-left: none;
+  background: rgba(0, 0, 0, 0);
+  padding: .5em;
+  margin-bottom: .25em;
+}
+
+::placeholder {
+  color: #c4c4c4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #23b499;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  outline:0;
+  box-shadow:none;
+  border:0!important;
+  background: #5c6664;
+  background-image: none;
+  flex: 1;
+  padding: 0 .5em;
+  color:#fff;
+  cursor:pointer;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: .25em;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+}
+.select:hover::after {
+  color: #23b499;
+}
