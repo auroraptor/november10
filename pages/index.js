@@ -4,6 +4,7 @@ const buttonWarning = page.querySelector("#button_type_warning");
 const popup = page.querySelector(".popup");
 const closeIcon = popup.querySelector(".icon");
 
+// TODO это можно сделать CSS flex order
 $(function () {
   jQuery.fn.swap = function (b) {
     b = jQuery(b)[0];
