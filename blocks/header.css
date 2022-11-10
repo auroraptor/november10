@@ -10,9 +10,9 @@
   margin: 0 auto;
 }
 
-.header_hide {
+.hidden {
   opacity: 0;
-  transition: opacity .2s linear;
+  transition: opacity .2s ease-in-out;
 }
 
 /* для мобильных меньше шрифт + спрятать текст длинного заголовка */

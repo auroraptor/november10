@@ -24,6 +24,12 @@ $(function () {
   });
 });
 
+const closePopup = () => {
+  popup.classList.remove("popup_opened");
+  document.removeEventListener("keydown", closeModal);
+  document.removeEventListener("mousedown", overlayClick);
+};
+
 const closeModal = (evt) => {
   if (evt.key === "Escape") {
     closePopup();
@@ -35,17 +41,11 @@ const overlayClick = (evt) => {
     closePopup();
   }
 };
-const closePopup = () => {
-  popup.classList.remove("popup_opened");
-  document.removeEventListener("keydown", closeModal);
-  document.removeEventListener("mousedown", overlayClick);
-};
 
 buttonWarning.addEventListener("click", () => {
-  header.classList.toggle("header_hide");
+  header.classList.toggle("hidden");
 });
-closeIcon.addEventListener("click", () => {
-  closePopup();
-});
+
+closeIcon.addEventListener("click", closePopup);
 document.addEventListener("keydown", closeModal);
 document.addEventListener("mousedown", overlayClick);
