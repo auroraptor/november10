@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages/form.css">
-  <title>Форма ввода</title>
-</head>
-<body class="page">
-  <div class="form__container">
-  <form action="" method="get" class="form">
-      <input class="input-group__input" type="text" name="first" id="first" required placeholder="Введите текст здесь">
-      <input class="input-group__input" type="text" name="second" id="second" required placeholder="Введите текст и здесь">
-    <button type="submit" class="button button_size_xl button_type_submit">Отправить</button>
-    <div class="json__container"></div>
-  </form>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/form.css" />
+    <title>Форма ввода</title>
+  </head>
+  <body class="page">
+    <div class="form__container">
+      <form action="" method="get" class="form">
+        <input
+          class="input-group__input"
+          type="text"
+          name="first"
+          id="first"
+          required
+          placeholder="Введите текст здесь"
+        />
+        <input
+          class="input-group__input"
+          type="text"
+          name="second"
+          id="second"
+          required
+          placeholder="Введите текст и здесь"
+        />
+        <button type="submit" class="button button_size_xl button_type_submit">
+          Отправить
+        </button>
+        <div class="json__container"></div>
+      </form>
+    </div>
 
-  <template id="select-template">
-    <select class="select">
-    </select>
-  </template>
-  <script src="./pages/form.js"></script>
-</body>
+    <template id="select-template">
+      <select class="select"></select>
+    </template>
+    <script src="./pages/form.js"></script>
+  </body>
 </html>
