@@ -41,9 +41,16 @@
   align-items: center;
   margin: 0 auto;
 }
+.left {
+  order: 0;
+}
+.rigth {
+  order: 2;
+}
 
 .cover {
   position: relative;
+  order: 3;
 }
 
 .cover::before {
